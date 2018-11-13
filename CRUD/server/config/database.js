@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/ronny',{
+mongoose.connect('mongodb://localhost/first-crud',{
 }).then(()=>{
         console.log("Conexão foi satisfatoria con la base de datos");
     }).catch((err)=>{
