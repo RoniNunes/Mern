@@ -1,0 +1,20 @@
+#!/usr/bin/nodejs
+var debug = require('debug')('my-application');
+var app = require('../app');
+
+
+const porta = process.env.PORT || 4006
+
+app.set('porta',porta);
+
+var server = app.listen(app.get('porta'), (err)=> {
+  if(err){
+    console.log('Erro connect server on port',+ server.address().porta)
+  }else{
+    console.log('Server listening on port',+ server.address().porta)
+  }
+
+  
+})
+
+
